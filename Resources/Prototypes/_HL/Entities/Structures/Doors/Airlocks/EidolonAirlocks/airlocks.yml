@@ -109,8 +109,6 @@
   components:
   - type: Sprite
     sprite: _HL/Structures/Doors/Airlocks/Standard/eidomercenary.rsi
-  - type: Wires
-    layoutId: AirlockMercenary
 
 - type: entity
   parent: AirlockMining
@@ -256,8 +254,6 @@
   components:
   - type: Sprite
     sprite: _HL/Structures/Doors/Airlocks/Glass/eidomercenary.rsi
-  - type: Wires
-    layoutId: AirlockMercenary
 
 - type: entity
   parent: AirlockGlassShuttle

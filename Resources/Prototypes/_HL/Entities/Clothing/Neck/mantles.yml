@@ -133,6 +133,6 @@
   description: A segmented arm covering for any colonial command personel. Almost exactly like the chief engineers, As you've earned the right to wear this!
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Neck\mantles\colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi
   - type: Clothing
-    sprite: _HL\Clothing\Neck\mantles\colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi

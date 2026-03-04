@@ -104,6 +104,16 @@
 
 - type: entity
   parent: AirlockMining
+  id: AirlockEidoMerc
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: _HL/Structures/Doors/Airlocks/Standard/eidomercenary.rsi
+  - type: Wires
+    layoutId: AirlockMercenary
+
+- type: entity
+  parent: AirlockMining
   id: AirlockEidoSecurity
   suffix: Security
   components:
@@ -238,6 +248,16 @@
   components:
   - type: Sprite
     sprite: _HL/Structures/Doors/Airlocks/Standard/eidoshuttle.rsi
+
+- type: entity
+  parent: AirlockMiningGlass
+  id: AirlockEidoMercGlass
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: _HL/Structures/Doors/Airlocks/Glass/eidomercenary.rsi
+  - type: Wires
+    layoutId: AirlockMercenary
 
 - type: entity
   parent: AirlockGlassShuttle

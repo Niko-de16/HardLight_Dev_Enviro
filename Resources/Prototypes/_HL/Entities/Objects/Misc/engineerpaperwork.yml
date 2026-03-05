@@ -1,0 +1,25 @@
+# Filled Folder
+- type: entity
+  id: FillEngiForms
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaperworkEngi101
+
+- type: entity
+  id: BoxFolderEngiForms
+  parent: [FillEngiForms, BoxFolderYellow]
+  name: Engineering 101 form folder
+  description: A folder filled with Engineering 101 paperwork to teach the fresh faces who can read.
+  suffix: Forms, Yellow
+
+- type: entity
+  id: PaperworkEngi101
+  name: arrest report
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [

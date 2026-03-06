@@ -1585,3 +1585,39 @@ Entries:
       message: 'term loose to hazard category in AAC tablet '
   id: 171
   time: '2026-03-03T08:34:53.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Added a placeholder system for Patreon supporter custom entities.
+  id: 172
+  time: '2026-03-05T22:29:36.0000000+00:00'
+- author: Sully669
+  changes:
+    - type: Add
+      message: Added Interdyne defibrillator
+    - type: Tweak
+      message: reduced Interdyne hypospray volume from 60 to 45
+    - type: Fix
+      message: fixed contraband level on Interdyne hypospray to be C2
+  id: 173
+  time: '2026-03-06T06:27:26.0000000+00:00'
+- author: Nikode16
+  changes:
+    - type: Add
+      message: Colonial Engineer Job Title
+    - type: Add
+      message: CYN's own Colonial Command Outfit
+    - type: Add
+      message: ColComm's own Manica
+    - type: Add
+      message: New Disposable Light, Mime, and Bible Implanters
+    - type: Add
+      message: Antique ColSec HoloBarrier and SecLight Items
+    - type: Add
+      message: ColComm Engineering Hardsuit
+    - type: Add
+      message: Liquid Nitrogen Filled Black Jetpack
+    - type: Add
+      message: Eidolon Mercenary Airlock _(These weren't added by accident by Valor)_
+  id: 174
+  time: '2026-03-06T06:28:04.0000000+00:00'

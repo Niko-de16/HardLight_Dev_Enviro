@@ -1629,3 +1629,9 @@ Entries:
         akin to the Big Version
   id: 175
   time: '2026-03-06T06:31:12.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Contraband detectors can now be constructed.
+  id: 176
+  time: '2026-03-06T06:38:14.0000000+00:00'

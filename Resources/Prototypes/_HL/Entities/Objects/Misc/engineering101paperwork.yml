@@ -482,6 +482,7 @@
       • [color=#6134ad]Heat Exchangers[/color]
       • [color=#f54242]Fuel Rods[/color]
 
+      [head=3]• Nuclear Reactor[/head]
       [head=1][color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]
       [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
       [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
@@ -489,6 +490,14 @@
       [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
       [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
       [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color][/head]
+
+
+      [head=3]• Small Nuclear Reactor[/head]
+      [head=1][color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#4287f5]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color][/head]
 
       [color=#f39f27]──────────────────────────────────────────[/color]
       [head=2]• Temperature[/head]
@@ -501,21 +510,45 @@
       [head=2]• Radiation[/head]
       Fuel Rods generate radiation, with this radiation leaking to the surrounding area around it in turn. Certain materials are more radioactive than others. A example would be Bananium Fuel Rods.
 
-      The maximum before overload is 50r/s.
+      The maximum before overload is 20 Rads/s
       [color=#f39f27]──────────────────────────────────────────[/color]
       [head=2]• Thermal Power[/head]
       The overall output of power from the reactor in terms of a ratio between the amount of gas being outputted, the heat of it, and the radiation output of the fuel rods.
 
-      The maximum before overload is 20Mtw.
+      The maximum before overload is 10MtW.
       [color=#f39f27]──────────────────────────────────────────[/color]
       [head=2]• Material Reactions[/head]
-      Certain Materials have specific reactions. There will be a few notable ones listed below.
+      Certain Materials have specific reactions. However those listed below are some of the best for their respective types.
 
-      Gold is one of the best materials for Heat Exchangers, Gas Exchangers and Control Rods. Having one of the highest thermal transfer values and borhum's interaction chance, with only a 15% reflection chance.
+      [head=3]• Control Rods[/head]
+      Gold, or Plasteel
 
-      Plutonium is one of the best Fuel Rods. Being a considerably safe and reliable source of long-lasting energy.
+      [head=3]• Gas Channels[/head]
+      Gold, Steel, or Glass
 
-      Bananium is the 2nd best Fuel Rods. Although releases a high amount of radiation, and quickly decays. So replacements are required more often.
+      [head=3]• Heat Exchangers[/head]
+      Gold
+
+      [head=3]• Fuel Rods[/head]
+      Plutonium, Bananium, Uranium, or Plasma
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Gas Reactions[/head]
+      There is also gas reactions. Below are their list. Note the fact the Nuclear Reactor is capable of breaking down certain gasses into other gasses and allowing gasses to burn inside itself. So use some of them with heavy caution.
+
+      [head=3]• Nitrogen[/head]
+      Much like the Supermatter, this gas is a go-to stable gas for the reactor. Nothing happens with it.
+
+      [head=3]• Carbon Dioxide[/head]
+      Lowers the reactivity inside the reactor, however with high enough temperatures it breaks down into Oxygen.
+
+      [head=3]• Nitrous Oxide[/head]
+      Does nothing much like Nitrogen, however with high enough temperatures it breaks down into Nitrogen.
+
+      [head=3]• Plasma[/head]
+      Increases the reactivity inside the reactor, while breaking down into randomized gasses.
+
+      [head=3]• Tritium[/head]
+      GREATLY Increases the reactivity inside the reactor, being 3x stronger than Plasma while also breaking down into randomized gasses. Use in HEAVY moderation.
       [color=#f39f27]──────────────────────────────────────────[/color]
       [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
       "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
@@ -572,9 +605,9 @@
       Undertemp is a state where the gasses going inside are too cold. Resulting in it being unable to push the turbine and making no power.
       [color=#f39f27]──────────────────────────────────────────[/color]
       [head=2]• Turbine Parts[/head]
-      This is very new, and it is recommended to experiment for what works best for the setup you wish to run.
+      Each part has its own reactions within the Gas Turbine, however Gold Parts are the most efficient for power generation. 
 
-      However a way to base what parts you may want is to refer to the material effects within the Guidebook for the Nuclear Reactor.
+      It is to note you can still experiment, as there are no "Bad" part. Just only inefficient for the setup. 
       [color=#f39f27]──────────────────────────────────────────[/color]
       [head=2]• Gas Turbine Repair[/head]
       To Repair a Gas Turbine, you only need a welder. However be warry of the gasses as the Turbine will continuously leak any gas that goes through it until it is repaired.

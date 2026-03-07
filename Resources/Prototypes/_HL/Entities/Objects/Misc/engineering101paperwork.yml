@@ -1,0 +1,277 @@
+# Filled Folder
+- type: entity
+  id: FillEngiForms
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaperworkEngiBuilding101
+    - id: PaperworkEngiElectrical101
+    - id: PaperworkEngiSingulo101
+    - id: PaperworkEngiTesla101
+
+- type: entity
+  id: BoxFolderEngiForms
+  parent: [FillEngiForms, BoxFolderYellow]
+  categories:
+  name: Engineering 101 Guidebook
+  description: A folder filled with Engineering 101 guides to teach the fresh faces who can read.
+  suffix: Forms, Yellow
+
+- type: entity
+  id: PaperworkEngiElectrical101
+  name: Engineering 101 - Eletrical Networks
+  description: Contains all the info one might need about wiring and their components.
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#f39f27]░░▄▀░░ [head=2][/head][/color] [bold]Hardlight Sector: Engineering 101[/bold]     [bold]Form: [/bold][color=#f39f27]EN-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [head=3][/head][/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [head=3][/head][/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                           [head=1][color=#f39f27]Electrical[/color] Networks[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you the basics of setting up wiring. Be it with LV, MV, or HV wiring.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Low Voltage[/head]
+      Low Voltage Wires, otherwise known as "LV" Wires. 
+
+      The green wiring that flows through the station, commonly powering Gas Pipes, Machines, Lathes, Lights, Ect...
+
+      They pull power from "APCs." The machines are commonly seen dotted around the station on walls. These can be toggled on and off without the need to alter wires.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Medium Voltage[/head]
+      Medium Voltage Wires, otherwise known as "MV" Wires. 
+
+      These are yellow wirings that commonly connecting "Substations" to APCs.
+
+      These are the wires that are the in-between HV and LV wires as they step-down HV connections to be useable for APCs via the Substations.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• High Voltage[/head]
+      High Voltage Wires, otherwise known as "HV" Wires.
+
+      These connect the various things that produce power to SMES's and/or Substations to feed power to the stations APC's. 
+
+      Most are commonly wires that bridge the gap to bring power from things like; Solars, Radiation Collector's, TEGs, AME's, Ect.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• APCs[/head]
+      Connects a MV Wire to step-down to a LV to bring power to the stations electronics and machines. Can be toggled on and off at their specific board to turn power on and off for anything connected.
+
+      [head=2]• Substations[/head]
+      Connects a HV wire to step-down to a MV. Bringing power to a APC Network. Substations are Commonly situated in a way to power a whole department or region's APC Network.
+
+      [head=2]• SMES's[/head]
+      Connects a HV Wire to charge and discharge as required. Used to store excess power incase things go badly and allow time to fix the problem before the station looses all power.
+
+      These require specifically a "Cable Terminal" to pull any produced power into themselves from HV Wires. Be mindful, as they will pull from MV and LV Wires as-well if they happen to be underneath. Also note; Cable Terminals separate the HV Network and avoids them connecting to cause the problem below.
+
+      Under no circumstances are you to connect the Output HV Wires from the SMES's to the Input Wires. This will cause a charge-loop which can rapidly cause a blackout if power production begins to fall short of the stations power use.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
+
+- type: entity
+  id: PaperworkEngiBuilding101
+  name: Engineering 101 - Building
+  description: Contains all the info one might need about constructing stuff like gas pipes or machines.
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#f39f27]░░▄▀░░ [head=2][/head][/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]BA-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [head=3][/head][/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [head=3][/head][/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                                 [head=1][color=#f39f27]Build[/color] Anything[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you the basics of building.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      Your PDA has a list of all constructable machines, signs, pipes, etc. Loaded into its database. To access this, simply press G or B on its build-in keyboard, or press the hammer icon in the top-left of the screen.
+
+      Don't be overwhelmed by the amount, as located in the top left of the UI is a search bar and category selector!
+
+      The right side of the UI contains the description of the object you seek to build, alongside the materials and tools needed.
+
+      For multi-step objects like constructing machines via machine frames. Simply hover your PDA over the machine board you wish to build, and it will provide the needed materials.
+
+      [color=#AAAAAA][italic][ Just hover over the machine frame or board and right-click for a display on what parts you need! ][/color][/italic]
+
+      Beyond that, place and build where you need! You will learn how to quickly do so in due time, so don't overly stress about being slow at first.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
+
+- type: entity
+  id: PaperworkEngiSingulo101
+  name: Engineering 101 - Singularity Engine
+  description: Contains all the info one might need about properly making and maintaining a singularity engine.
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]SE-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                           [head=1][color=#f39f27]Singularity[/color] Engine[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how to safely operate a Singularity Engine.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Singularity Engine[/head]
+      A Singularity Engine is a 9x9 space with 4 "Containment Field Generator's" at each corner, while being powered via "Emitters" firing a energy laser at them.
+
+      In the center rests the Singularity Generator, which outputs radiation once turned into a Singularity by firing a "Particle Accelerator" or PA at it. This radiation is collected and produces power via "Radiation Collector's."
+
+      It is recommended to to refuel the Radiation Collector's every 20 minutes to ensure peak power production.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Extra Info[/head]
+      Radiation Collector's require gaseous plasma to function, however the tank its held in doesn't matter. Plasma Tank, Air Tank. It will take them all the same. With the amount of plasma in the tank draining each second being based off the amount of radiation its exposed too, and subsequently the amount of power it produces.
+
+      The Emitter's require a MV Connection to function to charge the Containment fields. Be careful to not be hit by one of their energy beams, as they can cause painful burns.
+
+      The Particle Accelerator should be at maximum set to a power output of 2, as most Singularity Engine's lack the space for a larger Singularity. As-well as the beams of energy the PA produces are harmless by themselves, and can pass through objects.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Singuloose Event[/head]
+      A "Singuloose" is whenever the Singularity inside a Singularity Engine breaks out, or is released from its containment and begins to consume the station.
+
+      The only way to stop a Singuloose is to fire on it with "Portable Particle Decelerator's" or PPD's. Which carry enough internal charge for 20 shots. After which requires recharging inside a recharger. These can be produced in a Protolathe or Engineering Techfab.
+
+      Do note, PPD's much like the PA can fire through objects. So use it to your advantage if the singuloose is known to be beyond the object your firing through.
+
+      You WILL be irradiated by it, if attempting to destabilize it enough using PPD's! Work with Medical to ensure your health if the radiation begins to become debilitating.
+
+      Wearing Magboots will be a life-saver. As a Singuloose normally reaches critical mass, so has a very strong gravitational pull. If Magboots are not available, attempt to keep your distance from it or ask Science to produce more using their Protolathe.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
+
+- type: entity
+  id: PaperworkEngiTesla101
+  name: Engineering 101 - Tesla Engine
+  description: Contains all the info one might need about properly making and maintaining a tesla engine.
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]TE-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                                    [head=1][color=#f39f27]Tesla[/color] Engine[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how to safely operate a Tesla Engine.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Tesla Engine[/head]
+      A Tesla Engine is a 3x3 space with 4 "Containment Field Generator's" at each corner, while being powered via "Emitters" firing a energy laser at them.
+
+      In the center rests the Tesla Generator, which outputs electrical shocks and arcs once turned into a Tesla Ball by firing a "Particle Accelerator" or PA at it. The electrical shocks and arcs subsequently hit the Tesla Coils and and produce power.
+
+      It is recommended to repair the Tesla Coils every 20 minutes to ensure they do not break.
+
+      Due to the nature of electrical arcs and shocks targeting electrical sources. Grounding Rods are required around the edges of the containment field to prevent damage to the station. While wearing Insulated Gloves prevents the potential of them striking you.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Extra Info[/head]
+      Tesla Coils require a welder to repair periodically, however this can be made automatic via working with Robotics to produce Welder Bots.
+
+      The Emitter's require a MV Connection to function to charge the Containment fields. Be careful to not be hit by one of their energy beams, as they can cause painful burns.
+
+      The Particle Accelerator should only be active up until the Tesla Ball is produced by its generator, otherwise it could potentially break containment.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Teslaloose Event[/head]
+      A "Teslaloose" is whenever the Tesla Ball inside a Tesla Engine breaks out, or is released from its containment and begins to roam the station, striking electrical arcs at anything able to hold a electrical charge.
+
+      The only way to stop a Teslaloose is to fire on it with "Portable Particle Decelerator's" or PPD's. Which carry enough internal charge for 20 shots. After which requires recharging inside a recharger. These can be produced in a Protolathe or Engineering Techfab.
+
+      Do note, PPD's much like the PA can fire through objects. So use it to your advantage if the Teslaloose is known to be beyond the object your firing through. With a Teslaloose being much more hardy compared to a Singuloose, requiring much more time or effort to destabilize.
+
+      Avoiding the Tesla Ball is the key, as much like a Singuloose. Touching it directly results in death. However wearing Insulated Gloves makes you all but immune to the effects of the electrical arcs that strike at you.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
+
+- type: entity
+  id: PaperworkEngiAtmosParts101
+  name: Engineering 101 - Atmospheric Parts
+  description: Contains all the info one might need about each and every part that controls gasses.
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]AP-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                          [head=1][color=#f39f27]Atmospheric[/color] Parts[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how each atmospheric part functions and in what case should they be used.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Air Alarms[/head]
+      These Wall-Mounted machines are where things like Vents, Scrubbers, Signal Valves, Air Sensors, Etc. Can connect and feed information about a room.
+
+      This is also the only way to control Vents and Scrubbers and their various settings. Though are most commonly used to alert station crew if a room is not within a livable range.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Firelocks[/head]
+      Doors and Directional Doors that specifically close when their connected Air Alarms begin enter a danger state. Mostly as a deterrent or outright blockade to prevent the stations crew from accidently entering a area with a dangerous air mixture.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Gas Pipes[/head]
+      Your bread and butter of moving around gasses. From strait pieces, to 4-Way pieces, they connect the gas flow between each different part below.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Pumps[/head]
+      Gas Pumps and Volumetric Pumps move gasses. Both do things slightly differently.
+
+      Gas Pumps move gasses based off pressure. Being better for pulling and pushing gasses into vacuums, or finely controlling the pressure of a network.
+
+      Volumetric Pumps move gasses based off liters. Being better for bulk movement of gasses than fine control.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Input & Output[/head]
+      Vents, Passive Vents, Injectors, Scrubbers, Etc. These are ways to take gasses out of pipes, and put them into the air for use or removal.
+
+      Vents are the stations consistent way to take gasses from a network and output them to a desired pressure. Commonly used for Distribution of air across the station.
+
+      Passive Vents don't require power to function compared to other forms of Input and Outputs. Where they specifically can output or input depending on its setup, as they function off which has higher pressure, be it the vent or the room.
+
+      Air Injector's are the bread and butter of a one-way movement of gas into the atmosphere of a room. Quickly ejecting out any gas within itself without allowing a way back in. This though has a upper limit of 9000kPa.
+
+      Air Scrubbers, are opposing side of Air Injector's. Allowing via a air alarm for the removal of a specific gas or gasses from a rooms air.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Valves[/head]
+      Allows or Blocks the flow of gas as needed or inputted. Only three are worth mention.
+
+      Signal Valves function based off signals from logic gates or air alarms.
+
+      Passive Gates disallow gasses from the input to re-enter into the input. With the side of the input being on the red circle.
+
+      Inlet Pressure Regulator's will automatically open when their inlet reaches their Setpoint, and will stop either when the inlet goes back below the setpoint or is equal with its outlets pressure.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Mixing & Filtering[/head]
+      I'm reaching the character limit. This is self-explanatory.
+
+      Mixing, mixes the Primary and Secondary inputs at a ratio. This ratio can be disrupted by a temperature difference in the gasses.
+
+      Filtering has a output and pass-through. The output on the bottom has the gasses you select, and the pass-through is the opposing and has the gasses you didn't select.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Temperature Manipulation[/head]
+      Freezer's Cool, Heater's Heat. Their efficiency is based off how much power they get up until their full-powered.
+
+      Radiator's radiate the heat of the gas inside them, and takes in the heat from the gas, or lack there-of, around it.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Gas Condensing[/head]
+      This machine takes any gasses in the network and turns them into their liquid chemical form. Use this for easy base chemistry liquids!
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• What do Inline's Do?[/head]
+      Instead of functioning based off what gas is inside itself, it functions based off what gas is inside the entire network. Being incredibly useful overall depending on the situation.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• High-Pressure Casings[/head]
+      A Tier 3 Engineering Research from Science. These allow for much higher pressure or flow atmospheric parts to be made. 
+
+      A example is a High-Flow Gas Pump being able to push up to 13500kPa compared to the normal 4500kPa limit.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]

@@ -332,7 +332,7 @@
 - type: entity
   id: PaperworkEngiAtmosFrezon101
   name: Engineering 101 - Frezon Creation
-  description: Contains all the info one might need about each and every part that controls gasses.
+  description: Contains all the info one might need about the creation of Frezon.
   parent: Paper
   components:
   - type: Paper
@@ -371,49 +371,222 @@
 - type: entity
   id: PaperworkEngiAtmosTEG101
   name: Engineering 101 - Thermo-Eletric Generator
-  description: Contains all the info one might need about each and every part that controls gasses.
+  description: Contains all the info one might need about making and using a TEG.
   parent: Paper
   components:
   - type: Paper
     content: |2
-      [
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]TG-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+        [head=1][color=#f39f27]Thermo-Electric[/color] Generator[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how to make and run a TEG.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Thermo-Electric Generator[/head]
+      A power producer that generates electricity based off a temperature difference. The higher the difference between the two sides, the more power that is produced.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Cold Loop[/head]
+      A Nitrogen filled gas loop that feeds into one side of the TEG via a Circulator.
+
+      Commonly is cooled via space using radiator's, however for more compact setups it can be cooled via Freezers. Doing both is also a viable way for higher efficiency.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Hot Loop[/head]
+      A Plasma filled gas loop that feeds into one side of the TEG via a Circulator.
+
+      Commonly is heated via the burning of Plasma and Oxygen in a "Burn Chamber" at a 3% Plasma to 97% Oxygen mixture. It is recommended to fill said Burn Chamber to the maximum it can be with a injector, which is 9000kPa, before burning the mixture for the most efficient burn.
+
+      The Plasma in the Hot Loop's pipes is pushed through the room, and heated via radiator's. Which is moved out and into the TEG.
+
+      This loop always will become overfilled from heating up, so it is a must-have to setup a off-shoot with a Inlet Pressure Regulator set to 4400kPa that vents to space to avoid a clog. 
+
+      This off-shoot must be before the radiator's or before the pump that pushes gas into the radiator's. Or it will fail to work properly.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Hellfire Freezers[/head]
+      A more complex and power hungry, though even more efficient, way to cool a TEG's cold loop.
+
+      It uses a sealed room of Hellfire Freezers to cool the gas that goes through the pipes, then is put into the room directly via a passive vent or injector. Hellfire Freezers cool the gas due to their flaw. Then the gas is then taken back into the loop via a passive vent or scrubber to be pushed into the TEG.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
 
 - type: entity
   id: PaperworkEngiAtmosSM101
   name: Engineering 101 - Supermatter Crystal
-  description: Contains all the info one might need about each and every part that controls gasses.
+  description: Contains all the info one might need to safely operate a SM Engine.
   parent: Paper
   components:
   - type: Paper
     content: |2
-      [
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]SM-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                      [head=1][color=#f39f27]Supermatter[/color] Crystal[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how to make and run SM.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Supermatter Crystal[/head]
+      A power source that generates radiation which is collected by radiation collector's to produce power. Which can be increased via firing a emitter at it.
+
+      Poor management of the gasses inside its chamber or temperature results in a "Delamination" which takes different reactions but all ultimately result in the destruction of a large area around the Supermatter and threatens the entire station.
+
+      When active, which is upon a emitter firing on it or a object touching it, begins to output Oxygen and Plasma. Which scales higher based off its radiation intensity.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Supermatter Interactions[/head]
+      The Crystal actively intakes the gas within its chamber, altering its output and reaction based off what gasses are inside.
+
+      Normally that would be Nitrogen, which actively lowers its output on a percentile basis. Making it require more to scale its power output higher. With it being a incredibly safe and stable gas for use with the Supermatter.
+
+      If one was to wish to raise the power output however in a safe manner. Carbon Dioxide is a go-to so long as its done in moderation and kept cool to avoid breaking down into Oxygen, otherwise it risks causing a "Charged Delamination." Which results in rapid formations of electrical anomaly's and eventually a Tesla Ball. 
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Cold Loop[/head]
+      To keep the Supermatter's gasses cold and avoid a Delamination, a Cold Loop is required.
+
+      It functions much similarly to a TEGs Cold Loop. Either using radiator's in space to cool down gasses, freezers, or both.
+
+      However, unlike TEGs, the Cold Loop must also remove unwanted gasses, like Plasma or Oxygen to avoid a burn within the chamber or runaway reaction.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
 
 - type: entity
   id: PaperworkEngiAtmosNuke101
   name: Engineering 101 - Nuclear Reactor
-  description: Contains all the info one might need about each and every part that controls gasses.
+  description: Contains all the info one might need to tame the Nuclear Reactor.
   parent: Paper
   components:
   - type: Paper
     content: |2
-      [
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]NE-1[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                              [head=1][color=#f39f27]Nuclear[/color] Reactor[/head]
+
+      [color=#AAAAAA][italic]The following is intended to teach you how to tame a Nuclear Reactor.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Nuclear Reactor[/head]
+      Uses Radiation to generate heat, which is then put into a Gas Turbine to generate electricity.
+
+      There is multiple things that have to be kept track of, of which are labeled below. With each one having audible noise once they begin to reach dangerous levels. Alongside a diagram for a efficient design.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Setup Diagram[/head]
+
+      • [color=#4287f5]Control Rods[/color]
+      • [color=#34ad8d]Gas Channels[/color]
+      • [color=#6134ad]Heat Exchangers[/color]
+      • [color=#f54242]Fuel Rods[/color]
+
+      [head=1][color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color][/head]
+
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Temperature[/head]
+      The overall temperature of the reactor and it's many parts. This controls specifically the temperature of the gas it outputs however keep in mind the following;
+
+      The parts inside a nuclear reactor become melted at 1426C, at which they can no longer be removed. However any hotter than 80C requires gloves, and 400C receiving burns from handling is inevitable.
+
+      The Nuclear Reactor itself has a meltdown threshold of 1726C.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Radiation[/head]
+      Fuel Rods generate radiation, with this radiation leaking to the surrounding area around it in turn. Certain materials are more radioactive than others. A example would be Bananium Fuel Rods.
+
+      The maximum before overload is 50r/s.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Thermal Power[/head]
+      The overall output of power from the reactor in terms of a ratio between the amount of gas being outputted, the heat of it, and the radiation output of the fuel rods.
+
+      The maximum before overload is 20Mtw.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Material Reactions[/head]
+      Certain Materials have specific reactions. There will be a few notable ones listed below.
+
+      Gold is one of the best materials for Heat Exchangers and Gas Exchangers. Having one of the highest thermal transfer values.
+
+      Diamond is one of the best Control Rods. Having a interaction chance on-par with Bohrum, and boasting the highest reflection chances.
+
+      Plutonium is one of the best Fuel Rods. Being a considerably safe and reliable source of long-lasting energy.
+
+      Bananium is the 2nd best Fuel Rods. Although releases a high amount of radiation, and quickly decays. So replacements are required more often.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]
 
 - type: entity
   id: PaperworkEngiAtmosTurb101
   name: Engineering 101 - Gas Turbine
-  description: Contains all the info one might need about each and every part that controls gasses.
+  description: Contains all the info one might need about controlling a Gas Turbine.
   parent: Paper
   components:
   - type: Paper
     content: |2
-      [
+      [color=#f39f27]░░▄▀░░ [/color] [bold]Hardlight Sector: Engineering 101[/bold]       [bold]Form: [/bold][color=#f39f27]NE-2[/color]
+      [color=#f39f27]░▄█▄▄▀ [/color] [color=#AAAAAA][italic]Brought to you by Colonial Command[/color][/italic]
+      [color=#f39f27]██▀░░░ [/color] [color=#AAAAAA][italic]Written By: [bold]Colonial Engineer, CYN-182[/bold][/color][/italic]
+      [color=#383838]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
+      [color=#f39f27]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                                        [head=1][color=#f39f27]Gas[/color] Turbine[/head]
 
-- type: entity
-  id: PaperworkEngiAtmosMAXCAP101
-  name: Engineering 101 - MAXCAPs
-  description: Contains all the info one might need about each and every part that controls gasses.
-  parent: [ Paper, BaseC3SyndicateContraband ]
-  components:
-  - type: Paper
-    content: |2
-      [
+      [color=#AAAAAA][italic]The following is intended to teach you how to use the Gas Turbine.[/color][/italic]
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Gas Turbine[/head]
+      Produces Electricity commonly from the Nuclear Reactor. However with more complex methods can be used off other means.
+
+      There are many parts to keep in mind, which are listed below.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Flow Rate[/head]
+      [color=#AAAAAA][italic]Note the fact it is locked at 200 for now until we iron out the bug in the software from the update we conducted to them.[/color][/italic]
+
+      The amount of gas flowing into the turbine. The higher it is, the more gas the turbine both inputs and outputs through itself for power.
+
+      The way this is formulated however is the following;
+      100 + (100*Gas Exchanger Amount) = X
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Stator Load[/head]
+      The primary way to control the Gas Turbine. As the higher the Stator Load is, the more gas/heat it needs for the turbine to keep its current RPM.
+
+      The Stator Load also controls the amount of power the Turbine Produces per revolution. So the higher the Stator Load can be while remaining at peak RPM, the more power that's produced.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• RPM[/head]
+      Located on the left side of the UI is 12 Dashes of varying color's. The main one that is to be focused on is the green one, which is the 3rd dash down from the top.
+
+      That is the dash that is considered "Peak RPM."
+
+      The Red Dash located at the very top is considered the "Overspeed RPM" where the Gas Turbine begins to take damage.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Turbine States[/head]
+      Overspeed is a state where the turbine's Stator Load is too low, and the RPM is too high. Causing the Turbine to shake itself apart.
+
+      Stalling is a state where the Stator Load is too high, resulting in it coming to a stop as it no longer produces any power.
+
+      Overtemp is a state where the gasses going inside the turbine are too hot. Resulting in it starting to melt and eventually break open.
+
+      Undertemp is a state where the gasses going inside are too cold. Resulting in it being unable to push the turbine and making no power.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Turbine Parts[/head]
+      This is very new, and it is recommended to experiment for what works best for the setup you wish to run.
+
+      However a way to base what parts you may want is to refer to the material effects within the Guidebook for the Nuclear Reactor.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Gas Turbine Repair[/head]
+      To Repair a Gas Turbine, you only need a welder. However be warry of the gasses as the Turbine will continuously leak any gas that goes through it until it is repaired.
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [head=2]• Self-Throttling[/head]
+
+      [color=#AAAAAA][italic]Note the fact this is non-functional currently, and should not be used under any circumstances.
+
+      This will be re-included in the future once it can be confirmed it works reliably once again.[/color][/italic]
+
+      [color=#f39f27]──────────────────────────────────────────[/color]
+      [color=#AAAAAA][italic][bold]Thank You, [/bold]for reading this document. As; 
+      "Ignorance is only harmful if you do not seek to learn."[/color][/italic]

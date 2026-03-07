@@ -485,7 +485,7 @@
       [head=1][color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]
       [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
       [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
-      [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]
+      [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]
       [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]
       [color=#6134ad]▄[/color]  [color=#f54242]▄[/color]  [color=#4287f5]▄[/color]  [color=#34ad8d]▄[/color]  [color=#4287f5]▄[/color]  [color=#f54242]▄[/color]  [color=#6134ad]▄[/color]
       [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color]  [color=#6134ad]▄[/color]  [color=#34ad8d]▄[/color][/head]
@@ -511,9 +511,7 @@
       [head=2]• Material Reactions[/head]
       Certain Materials have specific reactions. There will be a few notable ones listed below.
 
-      Gold is one of the best materials for Heat Exchangers and Gas Exchangers. Having one of the highest thermal transfer values.
-
-      Diamond is one of the best Control Rods. Having a interaction chance on-par with Bohrum, and boasting the highest reflection chances.
+      Gold is one of the best materials for Heat Exchangers, Gas Exchangers and Control Rods. Having one of the highest thermal transfer values and borhum's interaction chance, with only a 15% reflection chance.
 
       Plutonium is one of the best Fuel Rods. Being a considerably safe and reliable source of long-lasting energy.
 

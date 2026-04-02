@@ -17,13 +17,14 @@
     back: ClothingBackpackMessengerColCommCYN182
     id: CYN182ColcommPDA
 
-# ID card
+# [ CYN's ID Card ]
 - type: entity
   id: CYN182ColcommIDCard
   parent: IDCardStandard
   name: CYN-182's ID card (Colonial Engineer)
   description: '"Do your jobs, be competent, and all will turn out just fine."'
   suffix: CYN182, Admin
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
@@ -44,11 +45,12 @@
     tags:
     - CentralCommand
 
-# pda
+# [ CYN's PDA ]
 - type: entity
   id: CYN182ColcommPDA
   parent: CentcomPDA
   suffix: CYN182, Admin
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
@@ -76,11 +78,11 @@
     - AppraisalCartridge
     - LedgerCartridge
 
-# backpack
+# [CYN's Backpack ]
 - type: entity
   id: ClothingBackpackMessengerColCommCYN182
   parent: ClothingBackpackMessengerHolding
-  name: CYN's messenger bag of holding
+  name: Messenger bag of holding (CYN-182's)
   description: A personally sown satchel with several straps to attach things. Seems a nametag is attached to the side.
   suffix: CYN182, Filled
   components:
@@ -90,7 +92,7 @@
   - type: StorageFill
     contents:
       - id: CableHVStack
-      - id: CableHVStack
+        amount: 3
       - id: ClothingShoesBootsMagAdv
       - id: ClothingShoesBootsSpeedAntiqueProto
       - id: MindShieldImplanterDisposable
@@ -105,7 +107,7 @@
       - id: ClothingWalletLeatherBlack
       - id: JetpackBlackLiquidNitrogen
       - id: Handcuffs
-      - id: Handcuffs
+        amount: 2
       - id: PinpointerUniversal
       - id: BoxFolderEngiForms
       - id: HandLabeler
@@ -114,20 +116,25 @@
       - id: ElectricGuitarInstrument
       - id: DoorRemoteAll
       - id: HandHeldMassScannerMarrik
-      - id: HandheldCrewMonitorMicroreactor
+      - id: SheetSteel
+        amount: 2
+      - id: CombatMedkitCYN182
+      - id: OmniPolypBluespaceJug
+      - id: SprayPaintDeepGreyDisposable
 
-# utility belt
+# [ A Web Vest to carry tools ]
 - type: entity
   id: ClothingWebUtilityColCommCYN182
   parent: ClothingBeltMilitaryWebbing
   suffix: CYN182, Filled
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
     - Admin
   - type: StorageFill
     contents:
-      - id: JawsOfLife
+      - id: SyndicateJawsOfLife
       - id: PowerDrill
       - id: WelderExperimental
       - id: Multitool
@@ -135,12 +142,13 @@
       - id: GasAnalyzer
       - id: RemoteSignallerAdvanced
 
-# jetpack
+# [ The Overfilled Jetpack is real! ]
 - type: entity
   id: JetpackBlackLiquidNitrogen
   parent: JetpackBlack
   name: Jetpack 
   suffix: CYN182, Admin
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
@@ -165,7 +173,7 @@
 #    - type: Item
 #      size: Large
 
-# colcomm engi hardsuit
+# [ CYN's Engineering ColComm Hardsuit ]
 - type: entity
   id: ClothingOuterHardsuitERTCentcommEngi
   parent: ClothingOuterHardsuitERTCentcomm
@@ -201,3 +209,215 @@
    - type: ClothingSpeedModifier
      walkModifier: 0.9
      sprintModifier: 0.9
+
+# Chemical Mixtures & Storage [ I have these off-Duty, so why not on-duty? ]
+- type: entity
+  id: OmniPolypBluespaceJug
+  parent: JugBluespace
+  name: Bluespace Jug (General Healer)
+  suffix: Admin
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 2000
+        reagents:
+          - ReagentId: Omnizine
+            Quantity: 1800
+          - ReagentId: PolypyryliumOligomers
+            Quantity: 200
+
+- type: entity
+  id: SalineDexplusVial
+  parent: VialBluespace
+  name: Bluespace Vial (Bloodloss & Airloss)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: DexalinPlus
+            Quantity: 150
+          - ReagentId: Saline
+            Quantity: 150
+
+- type: entity
+  id: AmoxlaVial
+  parent: VialBluespace
+  name: Bluespace Vial (Avali & Resomi)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: Amoxla
+            Quantity: 300
+
+- type: entity
+  id: UltravascVial
+  parent: VialBluespace
+  name: Bluespace Vial (Toxin)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: Ultravasculine
+            Quantity: 270
+          - ReagentId: Omnizine
+            Quantity: 30
+
+- type: entity
+  id: PolypVial
+  parent: VialBluespace
+  name: Bluespace Vial (Brute & Airloss)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: PolypyryliumOligomers
+            Quantity: 240
+          - ReagentId: Omnizine
+            Quantity: 60
+
+- type: entity
+  id: TranexVial
+  parent: VialBluespace
+  name: Bluespace Vial (Bleeding)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: TranexamicAcid
+            Quantity: 270
+          - ReagentId: Omnizine
+            Quantity: 30
+
+- type: entity
+  id: DermalineVial
+  parent: VialBluespace
+  name: Bluespace Vial (Burn)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: Dermaline
+            Quantity: 240
+          - ReagentId: Omnizine
+            Quantity: 60
+
+- type: entity
+  id: PhalanxVial
+  parent: VialBluespace
+  name: Bluespace Vial (Genetic)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: Phalanximine
+            Quantity: 180
+          - ReagentId: Omnizine
+            Quantity: 120
+
+- type: entity
+  id: CombatMechanitesVial
+  parent: VialBluespace
+  name: Bluespace Vial (Emergency Use)
+  suffix: Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+        reagents:
+          - ReagentId: Mechanites
+            Quantity: 270
+          - ReagentId: Omnizine
+            Quantity: 30
+
+- type: entity
+  id: SyringeCaseCYN182
+  parent: SyringeCase (Vial Case)
+  suffix: CYN182, Filled
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: StorageFill
+    contents:
+      - id: SalineDexplusVial
+      - id: AmoxlaVial
+      - id: UltravascVial
+      - id: PolypVial
+      - id: TranexVial
+      - id: DermalineVial
+      - id: PhalanxVial
+      - id: CombatMechanitesVial
+
+- type: entity
+  id: CombatMedkitCYN182
+  parent: MedkitCombat
+  suffix: CYN182, Filled
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: StorageFill
+    contents:
+      - id: SyringeCaseCYN182
+      - id: Hypospray
+      - id: HandheldCrewMonitorMicroreactor
+      - id: HandheldHealthAnalyzerMicroreactor

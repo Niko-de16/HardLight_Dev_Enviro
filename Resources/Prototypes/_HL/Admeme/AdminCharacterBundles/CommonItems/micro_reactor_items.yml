@@ -30,6 +30,10 @@
   id: HoloprojectorNfsdAntiqueProto
   parent: [ BaseAntiqueProtoItem, HoloprojectorNfsd ]
 
+- type: entity
+  id: HoloprojectorRadiationAntiqueProto
+  parent: [ BaseAntiqueProtoItem, RadiationBlockingProjector ]
+
 # Base Item with Microreactor
 - type: entity
   id: BaseMicroreactorItem

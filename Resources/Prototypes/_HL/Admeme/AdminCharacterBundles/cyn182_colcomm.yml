@@ -1,5 +1,5 @@
 - type: startingGear
-  id: CYN182ColCommUniform
+  id: CYNColCommUniform
   equipment:
     pocket1: WeaponEnergyRevolver
     pocket2: FlashlightSecliteAntiqueProto

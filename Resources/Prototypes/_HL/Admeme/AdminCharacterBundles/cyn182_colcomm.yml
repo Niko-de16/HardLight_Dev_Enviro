@@ -97,6 +97,7 @@
       - id: MedicalTrackingImplanterDisposable
       - id: DeathRattleImplanterColcommDisposable
       - id: DeathAcidifierImplanterDisposable
+      - id: BibleUserImplanterDisposable
       - id: ClothingOuterHardsuitERTCentcommEngi
       - id: BoxFolderColComClipboardNirou
       - id: ClothingWalletLeatherBlack
@@ -117,6 +118,8 @@
       - id: CYNPillBottleTricordrazine20
         amount: 2
       - id: BluespaceAirTankLiquidNitrogenCYN
+      - id: Bible
+      - id: AntiPsychicKnife
       - id: SprayPaintDeepGreyDisposable
 
 # [ A Web Vest to carry tools ]

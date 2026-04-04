@@ -5,7 +5,7 @@
     pocket2: FlashlightSecliteAntiqueProto
     head: ClothingHeadHelmetChameleon
     neck: TrinketHeatRes
-    # mask:
+    mask: ClothingMaskPilot
     eyes: ClothingEyesGlassesNfsd
     ears: ClothingHeadsetAltColCom
     gloves: ClothingHandsGlovesSr
@@ -116,6 +116,7 @@
       - id: IPCHealerPouchFirstAidCYN
       - id: CYNPillBottleTricordrazine20
         amount: 2
+      - id: BluespaceAirTankLiquidNitrogenCYN
       - id: SprayPaintDeepGreyDisposable
 
 # [ A Web Vest to carry tools ]
@@ -168,8 +169,27 @@
       volume: 5
       moles:
         - 0 # oxygen
-        - 1203 # nitrogen
-      temperature: 1
+        - 8.46 # nitrogen
+      temperature: 72
+
+# [ The Special Nitrogen Tank ]
+- type: entity
+  id: BluespaceAirTankLiquidNitrogenCYN
+  parent: BluespaceAirTank
+  suffix: CYN182, Admin
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      volume: 20
+      moles:
+        - 0 # oxygen
+        - 33.85 # nitrogen
+      temperature: 72
 
 # smaller nullspace
 #- type: entity

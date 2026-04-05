@@ -2,7 +2,7 @@
   id: HLFreezerPouch
   parent: NFPouchBase
   name: Freezer Pouch
-  description: A pouch for toating around perishable items.
+  description: A pouch internally lined with a self-cooling material, preventing any contents from spoiling.
   components:
   - type: AntiRottingContainer
   - type: Sprite

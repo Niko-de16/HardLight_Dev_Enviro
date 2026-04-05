@@ -35,15 +35,15 @@
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#ca4545"
+        color: "#c8c8d7"
       right:
       - state: inhand-right
-        color: "#ca4545"
+        color: "#c8c8d7"
   - type: Clothing
     clothingVisuals:
       belt:
       - state: equipped-BELT
-        color: "#ca4545"
+        color: "#c8c8d7"
       pocket:
       - state: equipped-BELT
-        color: "#ca4545"
+        color: "#c8c8d7"
